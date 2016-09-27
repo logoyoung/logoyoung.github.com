@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 <channel>
-        <title>sunxiaobiu技术不宅</title>
-        <description>sunxiaobiu技术不宅 - sunxiaobiu</description>
+        <title>logoyoung的博客</title>
+        <description>logoyoung的博客 - sunxiaobiu</description>
         <link></link>
         <atom:link href="" rel="self" type="application/rss+xml" />
-        <lastBuildDate>Tue, 27 Sep 2016 12:31:02 +0800</lastBuildDate>
-        <pubDate>Tue, 27 Sep 2016 12:31:02 +0800</pubDate>
+        <lastBuildDate>Tue, 27 Sep 2016 12:34:50 +0800</lastBuildDate>
+        <pubDate>Tue, 27 Sep 2016 12:34:50 +0800</pubDate>
         <ttl>60</ttl>
 
 
