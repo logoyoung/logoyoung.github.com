@@ -1,0 +1,113 @@
+<p>Linux 沿用的对齐策略是，2字节数据类型（例如<code class="highlighter-rouge">short</code>）的地址是2的倍数，而较大的数据类型（例如<code class="highlighter-rouge">int</code>、<code class="highlighter-rouge">int*</code>、<code class="highlighter-rouge">float</code>和<code class="highlighter-rouge">double</code>）的地址必须是4的倍数。</p>
+
+<!--more-->
+
+<p>Windows 要求任何 K 字节基本对象的址址必须是 K 的倍数，K = 2, 4 或者 8。特别的，它要求一个<code class="highlighter-rouge">double</code>或者<code class="highlighter-rouge">long long</code>类型数据的地址应该是8的倍数。</p>
+
+<h2 id="section">对齐准则</h2>
+
+<p><strong>四个重要的基本概念：</strong></p>
+
+<blockquote>
+  <ol>
+    <li>数据类型自身的对齐值：char型数据自身对齐值为1字节，short型数据为2字节，int/float型为4字节，double型为8字节。</li>
+    <li>结构体或类的自身对齐值：其成员中自身对齐值最大的那个值。</li>
+    <li>指定对齐值：#pragma pack (value)时的指定对齐值value。</li>
+    <li>数据成员、结构体和类的有效对齐值：自身对齐值和指定对齐值中较小者，即有效对齐值=min{自身对齐值，当前指定的pack值}。</li>
+  </ol>
+</blockquote>
+
+<p>其中，有效对齐值<code class="highlighter-rouge">N</code>是最终用来决定数据存放地址方式的值。有效对齐<code class="highlighter-rouge">N</code>表示<strong>“对齐在<code class="highlighter-rouge">N</code>上”</strong>，即该数据的<strong>“存放起始地址 % N = 0”</strong>。而数据结构中的数据变量都是按定义的先后顺序存放。第一个数据变量的起始地址就是数据结构的起始地址。结构体的成员变量要对齐存放，结构体本身也要根据自身的有效对齐值圆整(即结构体成员变量占用总长度为结构体有效对齐值的整数倍)。</p>
+
+<p><strong>例1：</strong></p>
+<div class="language-cpp highlighter-rouge"><pre class="highlight"><code><span class="k">struct</span> <span class="n">A</span><span class="p">{</span>
+    <span class="kt">int</span>    <span class="n">a</span><span class="p">;</span>
+    <span class="kt">char</span>   <span class="n">b</span><span class="p">;</span>
+    <span class="kt">short</span>  <span class="n">c</span><span class="p">;</span>
+<span class="p">};</span>
+<span class="k">struct</span> <span class="n">B</span><span class="p">{</span>
+    <span class="kt">char</span>   <span class="n">b</span><span class="p">;</span>
+    <span class="kt">int</span>    <span class="n">a</span><span class="p">;</span>
+    <span class="kt">short</span>  <span class="n">c</span><span class="p">;</span>
+<span class="p">};</span>
+</code></pre>
+</div>
+
+<p><strong>结果：</strong><code class="highlighter-rouge">sizeof(strcut A)</code>值为8；<code class="highlighter-rouge">sizeof(struct B)</code>的值却是12。</p>
+
+<p><strong>例2：</strong></p>
+<div class="language-cpp highlighter-rouge"><pre class="highlight"><code><span class="cp">#pragma pack(2)  //指定按2字节对齐
+</span><span class="k">struct</span> <span class="n">C</span><span class="p">{</span>
+    <span class="kt">char</span>  <span class="n">b</span><span class="p">;</span>
+    <span class="kt">int</span>   <span class="n">a</span><span class="p">;</span>
+    <span class="kt">short</span> <span class="n">c</span><span class="p">;</span>
+<span class="p">};</span>
+<span class="cp">#pragma pack()   //取消指定对齐，恢复缺省对齐
+</span></code></pre>
+</div>
+
+<p><strong>结果：</strong><code class="highlighter-rouge">sizeof(struct C) = 8</code>。</p>
+
+<h2 id="section-1">栈内存对齐</h2>
+
+<p>在VC/C++中，栈的对齐方式不受结构体成员对齐选项的影响。总是保持对齐且对齐在4字节边界上。（并未考证64位）</p>
+
+<h2 id="section-2">位域对齐</h2>
+
+<p>位域成员不能单独被取<code class="highlighter-rouge">sizeof</code>值。下面主要讨论含有位域的结构体的<code class="highlighter-rouge">sizeof</code>。</p>
+
+<p>C99 规定<code class="highlighter-rouge">int</code>、<code class="highlighter-rouge">unsigned int</code>和<code class="highlighter-rouge">bool</code>可以作为位域类型，但编译器几乎都对此作了扩展，允许其它类型的存在。位域作为嵌入式系统中非常常见的一种编程工具，优点在于压缩程序的存储空间。</p>
+
+<p><strong>其对齐规则大致为：</strong></p>
+
+<blockquote>
+  <ol>
+    <li>如果相邻位域字段的类型相同，且其位宽之和小于类型的<code class="highlighter-rouge">sizeof</code>大小，则后面的字段将紧邻前一个字段存储，直到不能容纳为止；</li>
+    <li>如果相邻位域字段的类型相同，但其位宽之和大于类型的<code class="highlighter-rouge">sizeof</code>大小，则后面的字段将从新的存储单元开始，其偏移量为其类型大小的整数倍；</li>
+    <li>如果相邻的位域字段的类型不同，则各编译器的具体实现有差异，VC6 采取不压缩方式，Dev-C++ 和 GCC 采取压缩方式；</li>
+    <li>如果位域字段之间穿插着非位域字段，则不进行压缩；</li>
+    <li>整个结构体的总大小为最宽基本类型成员大小的整数倍，而位域则按照其最宽类型字节数对齐。</li>
+  </ol>
+</blockquote>
+
+<p><strong>例3：</strong></p>
+
+<div class="language-cpp highlighter-rouge"><pre class="highlight"><code><span class="k">struct</span> <span class="n">BitField</span><span class="p">{</span>
+    <span class="kt">char</span> <span class="n">element1</span>  <span class="o">:</span> <span class="mi">1</span><span class="p">;</span>
+    <span class="kt">char</span> <span class="n">element2</span>  <span class="o">:</span> <span class="mi">4</span><span class="p">;</span>
+    <span class="kt">char</span> <span class="n">element3</span>  <span class="o">:</span> <span class="mi">5</span><span class="p">;</span>
+<span class="p">};</span>
+</code></pre>
+</div>
+<p>位域类型为<code class="highlighter-rouge">char</code>，第1个字节仅能容纳下<code class="highlighter-rouge">element1</code>和<code class="highlighter-rouge">element2</code>，所以<code class="highlighter-rouge">element1</code>和<code class="highlighter-rouge">element2</code>被压缩到第1个字节中，而<code class="highlighter-rouge">element3</code>只能从下一个字节开始。因此<code class="highlighter-rouge">sizeof(BitField)</code>的结果为2。</p>
+
+<p><strong>例4：</strong></p>
+
+<div class="language-cpp highlighter-rouge"><pre class="highlight"><code><span class="k">struct</span> <span class="n">StructBitField</span><span class="p">{</span>
+    <span class="kt">int</span> <span class="n">element1</span>   <span class="o">:</span> <span class="mi">1</span><span class="p">;</span>
+    <span class="kt">int</span> <span class="n">element2</span>   <span class="o">:</span> <span class="mi">5</span><span class="p">;</span>
+    <span class="kt">int</span> <span class="n">element3</span>   <span class="o">:</span> <span class="mi">29</span><span class="p">;</span>
+    <span class="kt">int</span> <span class="n">element4</span>   <span class="o">:</span> <span class="mi">6</span><span class="p">;</span>
+    <span class="kt">char</span> <span class="n">element5</span>  <span class="o">:</span><span class="mi">2</span><span class="p">;</span>
+    <span class="kt">char</span> <span class="n">stelement</span><span class="p">;</span>  <span class="c1">//在含位域的结构或联合中也可同时说明普通成员
+</span><span class="p">};</span>
+</code></pre>
+</div>
+
+<p>位域中最宽类型<code class="highlighter-rouge">int</code>的字节数为4，因此结构体按4字节对齐，在 VC6 中其<code class="highlighter-rouge">sizeof</code>为16。</p>
+
+<p><strong>例5：</strong></p>
+
+<div class="language-cpp highlighter-rouge"><pre class="highlight"><code><span class="k">struct</span> <span class="n">BitField4</span><span class="p">{</span>
+    <span class="kt">char</span> <span class="n">element1</span>  <span class="o">:</span> <span class="mi">3</span><span class="p">;</span>
+    <span class="kt">char</span>  <span class="o">:</span><span class="mi">0</span><span class="p">;</span>
+    <span class="kt">char</span> <span class="n">element3</span>  <span class="o">:</span> <span class="mi">5</span><span class="p">;</span>
+<span class="p">};</span>
+</code></pre>
+</div>
+
+<p>长度为0的位域告诉编译器将下一个位域放在一个存储单元的起始位置。如上，编译器会给成员<code class="highlighter-rouge">element1</code>分配3位，接着跳过余下的4位到下一个存储单元，然后给成员<code class="highlighter-rouge">element3</code>分配5位。故上面的结构体大小为2。</p>
+
+<hr />
+
+<p><em>本文参考：<a href="http://www.cnblogs.com/clover-toeic/p/3853132.html">http://www.cnblogs.com/clover-toeic/p/3853132.html</a></em></p>

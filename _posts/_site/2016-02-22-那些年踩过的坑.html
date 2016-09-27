@@ -1,0 +1,41 @@
+<p>在JAVA web开发过程中，遇到的各类问题总结，包括JAVA语言，Spring，Spring mvc，ibatis框架等使用过程中遇到的一些常见的，或者不常见的问题。分条列举，附有问题详情以及解决方案。</p>
+
+<!--more-->
+
+<h3 id="javaboolengetsetiseditable">1.java定义的boolen数据类型的get，set函数（定义为isEditable）：</h3>
+<div class="language-java highlighter-rouge"><pre class="highlight"><code><span class="kd">private</span> <span class="kt">boolean</span> <span class="n">isEditable</span><span class="o">;</span><span class="c1">//是否可以编辑</span>
+
+<span class="kd">public</span> <span class="kt">boolean</span> <span class="nf">isEditable</span><span class="o">()</span> <span class="o">{</span>
+    <span class="k">return</span> <span class="n">isEditable</span><span class="o">;</span>
+<span class="o">}</span>
+
+<span class="kd">public</span> <span class="kt">void</span> <span class="nf">setEditable</span><span class="o">(</span><span class="kt">boolean</span> <span class="n">isEditable</span><span class="o">)</span> <span class="o">{</span>
+    <span class="k">this</span><span class="o">.</span><span class="na">isEditable</span> <span class="o">=</span> <span class="n">isEditable</span><span class="o">;</span>
+<span class="o">}</span>
+</code></pre>
+</div>
+<p><strong>现象</strong>：IDEA自动生成的boolean类型与我们的预期有一定的差异，属性isEditable的getter访问器是isEditable(), 而不是getIsEditable()；setter访问器是setEditable(),而不是setIsEditable()。</p>
+
+<p><strong>原因</strong>：由于属性名isEditable的is没有去掉， 以致java bean类违背了java bean 的命名规范。
+<code class="highlighter-rouge">JavaBean 的属性名和getter/setter存取方法规则小结：</code></p>
+<blockquote>
+  <ul>
+    <li>对于常规属性propertyName ， 属性名称的第一个单词小写且字母个数大于1，第二个单词首字母大写。对应的getter/setter方法名为：get/set + PropertyName()， 即属性名称的第一个单词的首字母改成大写，前面再加上”get”或”set”前缀。</li>
+    <li>对于布尔类型propertyName,可以按常规属性的规则编写getter/setter方法外， getter方法可以使用 is + PropertyName()的形式来代替。</li>
+    <li>对于非常规属性pName，属性名称的第一个单词小写且字母个数等于1，第二个单词首字母大写,分一下三种情况：</li>
+  </ul>
+</blockquote>
+
+<p><code class="highlighter-rouge">1.</code>对应的getter/setter方法名可以为：get/set + PName()， 即第一个单词的首字母为改为大写，前面再加上”get”或”set”前缀。</p>
+
+<p><code class="highlighter-rouge">2.</code>对应的getter/setter方法名也可以为：get/set + pName()， 即属性名称不变，第一个单词的首字母任然为小写，前面再加上”get”或”set”前缀。</p>
+
+<p><code class="highlighter-rouge">3.</code>对于非常规属性PName， 属性名称的前两个字母都是大写  。即连续两个大写字母开头的属性名。对应的getter/setter方法名为： get/set+PName()</p>
+
+<p><code class="highlighter-rouge">4.</code>对于非常规属性<Property>或<PropertyName>， 属性名称第一个字母大写 。网上有帖子说这是不符合JSR规范的，会报 "属性找不到" 的错误。</PropertyName></Property></p>
+
+<p><strong>总结</strong>：
+<strong>1. javabean属性命名尽量使用常规的驼峰式命名规则</strong>
+<strong>2. 属性名第一个单词尽量避免使用一个字母：如eBook， eMail</strong>
+<strong>3. boolean属性名避免使用 “is” 开头的名称</strong>
+<strong>4. 随着jdk， eclipse， spring 等软件版本的不断提高， 底版本的出现的问题可能在高版本中解决了， 低版本原来正常的代码可能在高版本环境下不再支持。</strong></p>
