@@ -16,8 +16,8 @@ permalink: /:categories/:year/:month/:day/:title
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
 highlighter: pygments
 
-assets: http://logoyoung.github.io/assets
-baseurl: http://logoyoung.github.io
+assets: https://logoyoung.github.io/assets
+baseurl: https://logoyoung.github.io
 
 # pagination
 paginate: 10
