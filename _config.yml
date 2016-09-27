@@ -40,10 +40,8 @@ tagline: A technology blog for myself.
 ##### Menu
 menu:
   Home: /
-  Archives: /archives
-  Life: /life
-  Web: /web
-  About: /about
+  Web: /archives
+  Life: /about
 ## you can create `tags` and `categories` folders in `../source`.
 ## And create a `index.md` file in each of them.
 ## set `front-matter`as

@@ -97,6 +97,92 @@
         <header class="article-info clearfix">
   <h1 itemprop="name">
     
+      <a href="https://logoyoung.github.io/web/2016/09/27/test2" title="logoyoung博客" itemprop="url">logoyoung博客</a>
+  </h1>
+  <p class="article-author">By
+       
+		<a href="https://logoyoung.github.io/about" title="logoyoung" target="_blank" itemprop="author">logoyoung</a>
+		
+  <p class="article-time">
+    <time datetime="2016-09-27 00:00:00 +0800" itemprop="datePublished"> 发表于 2016-09-27</time>
+    
+  </p>
+</header>
+    <div class="article-content">
+        
+        在JAVA垃圾回收，内存分配过程中，经常会涉及对象的生命周期，而判定对象是否存货都与“引用”有关。Java中的引用的定义非常简单粗糙：如果reference类型的数据中存储的数值代表的是另一块内存的起始地址，就表示该内存块存在一个引用。这样分类会将对讲划分成两个类别：有引用、无引用。我们希望能够根据GC回收时间来对对象引用进行划分：当内存空间足够时，对象的引用继续保持；当内存不够时，抛弃这些对象。
+        
+        
+        <p class="article-more-link">
+          
+            <a href="https://logoyoung.github.io/web/2016/09/27/test2#more">More</a>
+          
+       </p>
+    </div>
+    
+    <footer class="article-footer clearfix">
+<div class="article-catetags">
+
+<div class="article-categories">
+  <span></span>
+  <!--
+  <%- list_categories(item.categories, {
+      show_count: false,
+      class: 'article-category',
+      style: 'none',
+      separator: '►'
+  }) %>
+  -->
+  
+  <a class="article-category-link" href="https://logoyoung.github.io/categories/#web">web</a>
+  
+</div>
+
+
+  <div class="article-tags">
+  <!--
+  <% var tags = [];
+    item.tags.forEach(function(tag){
+      tags.push('<a href="' + config.root + tag.path + '">' + tag.name + '</a>');
+    }); %>-->
+  <span></span> <!--<%- tags.join('') %>-->
+  
+  
+  <a href="https://logoyoung.github.io/tags/#web">web</a>
+  
+  <a href="https://logoyoung.github.io/tags/#引用">引用</a>
+  
+  </div>
+
+</div>
+
+
+
+
+<div class="comments-count">
+	
+	  	<span></span>
+		<a href="https://logoyoung.github.io/web/2016/09/27/test2#disqus_thread" class="comments-count-link">Comments</a>
+	
+</div>
+
+</footer>
+    </article>
+
+
+
+
+
+
+  
+  
+  
+  
+    
+    <article class="post-expand post" itemprop="articleBody"> 
+        <header class="article-info clearfix">
+  <h1 itemprop="name">
+    
       <a href="https://logoyoung.github.io/life/2016/09/27/test" title="logoyoung博客" itemprop="url">logoyoung博客</a>
   </h1>
   <p class="article-author">By
@@ -850,90 +936,6 @@
 
 
 
-  
-  
-  
-  
-    
-    <article class="post-expand post" itemprop="articleBody"> 
-        <header class="article-info clearfix">
-  <h1 itemprop="name">
-    
-      <a href="https://logoyoung.github.io/daily/2015/10/09/tool-for-jekyll-blog" title="写 Jekyll 博客工具" itemprop="url">写 Jekyll 博客工具</a>
-  </h1>
-  <p class="article-author">By
-       
-		<a href="https://logoyoung.github.io/about" title="logoyoung" target="_blank" itemprop="author">logoyoung</a>
-		
-  <p class="article-time">
-    <time datetime="2015-10-09 00:00:00 +0800" itemprop="datePublished"> 发表于 2015-10-09</time>
-    
-  </p>
-</header>
-    <div class="article-content">
-        
-        上次说要写一个类似 stackeditor 的东西来写 Jekyll 博客，终于写好了。这将是第一篇用该工具写的博客。
-        
-        
-        <p class="article-more-link">
-          
-            <a href="https://logoyoung.github.io/daily/2015/10/09/tool-for-jekyll-blog#more">More</a>
-          
-       </p>
-    </div>
-    
-    <footer class="article-footer clearfix">
-<div class="article-catetags">
-
-<div class="article-categories">
-  <span></span>
-  <!--
-  <%- list_categories(item.categories, {
-      show_count: false,
-      class: 'article-category',
-      style: 'none',
-      separator: '►'
-  }) %>
-  -->
-  
-  <a class="article-category-link" href="https://logoyoung.github.io/categories/#daily">daily</a>
-  
-</div>
-
-
-  <div class="article-tags">
-  <!--
-  <% var tags = [];
-    item.tags.forEach(function(tag){
-      tags.push('<a href="' + config.root + tag.path + '">' + tag.name + '</a>');
-    }); %>-->
-  <span></span> <!--<%- tags.join('') %>-->
-  
-  
-  <a href="https://logoyoung.github.io/tags/#daily">daily</a>
-  
-  </div>
-
-</div>
-
-
-
-
-<div class="comments-count">
-	
-	  	<span></span>
-		<a href="https://logoyoung.github.io/daily/2015/10/09/tool-for-jekyll-blog#disqus_thread" class="comments-count-link">Comments</a>
-	
-</div>
-
-</footer>
-    </article>
-
-
-
-
-
-
 
   <nav id="page-nav" class="clearfix">
   <nav id="page-nav" class="clearfix">
@@ -991,6 +993,10 @@
 			<li><a href="https://logoyoung.github.io/categories/#life" title="life">life<sup>2</sup></a></li>
 		  
 		
+		  
+			<li><a href="https://logoyoung.github.io/categories/#web" title="web">web<sup>1</sup></a></li>
+		  
+		
 		</ul>
 </div>
 
@@ -1041,11 +1047,15 @@
 			
 		
 			
-				<li><a href="https://logoyoung.github.io/tags/#引用" title="引用">引用<sup>3</sup></a></li>
+				<li><a href="https://logoyoung.github.io/tags/#引用" title="引用">引用<sup>4</sup></a></li>
 			
 		
 			
 				<li><a href="https://logoyoung.github.io/tags/#test" title="test">test<sup>2</sup></a></li>
+			
+		
+			
+				<li><a href="https://logoyoung.github.io/tags/#web" title="web">web<sup>1</sup></a></li>
 			
 		
 		</ul>

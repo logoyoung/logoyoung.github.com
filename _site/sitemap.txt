@@ -2,17 +2,19 @@
 /404
 /atom.xml
 /detail
-/about/
 /search/
-/tags/
 /
+/tags/
 /categories/
 /archives/
+/about/
+/web/
 /css/main.css
 /rss.xml
 /sitemap.txt
 /page2/
 
+/web/2016/09/27/test2
 /life/2016/09/27/test
 /life/2016/09/27/css
 /java/2016/03/15/JAVA%E4%B8%AD-%E5%BC%BA%E5%BC%95%E7%94%A8-%E8%BD%AF%E5%BC%95%E7%94%A8-%E5%BC%B1%E5%BC%95%E7%94%A8-%E8%99%9A%E5%BC%95%E7%94%A8-%E6%A6%82%E5%BF%B5%E6%AF%94%E8%BE%83
