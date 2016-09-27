@@ -41,9 +41,8 @@ tagline: A technology blog for myself.
 menu:
   Home: /
   Archives: /archives
-  Life:/life
-  Web:/js
-  Book:/book
+  Life: /life
+  Web: /web
   About: /about
 ## you can create `tags` and `categories` folders in `../source`.
 ## And create a `index.md` file in each of them.
@@ -77,7 +76,7 @@ banner_img: #img/banner.jpg ## size:1920px*200px+. Banner Picture
 #### index post is expanding or not
 index:
   expand: true           ## default is unexpanding,so you can only see the short description of each post.
-  excerpt_link: Read More
+  excerpt_link: More
 
 close_aside: false  #close sidebar in post page if true
 mathjax: false      #enable mathjax if true
