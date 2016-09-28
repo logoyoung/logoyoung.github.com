@@ -910,7 +910,7 @@ header nav ul li a:hover {
 }
 
 .post, .page, .link, .photo {
-    background: #fafafa;
+    background: #fff;
 }
 
 .post a, .page a, .link a, .photo a {
@@ -935,7 +935,6 @@ article header.article-info > h1 {
     word-break: normal;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    border-left: 5px solid #2ca6cb
 }
 
 @media only screen and (min-width: 1024px) {
@@ -948,7 +947,7 @@ article header.article-info > h1 {
 article header.article-info > p.article-author {
     padding: .3em 4% .3em 0;
     text-align: right;
-    border-bottom: 1px solid #dbdbdb;
+    display: none;
 }
 
 @media only screen and (min-width: 768px) {
@@ -963,6 +962,7 @@ article header.article-info > p.article-time {
     font-size: .8em;
     text-align: center;
     margin-bottom: -2.7em;
+    color:#666;
 }
 
 @media only screen and (min-width: 768px) {
