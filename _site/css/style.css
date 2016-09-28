@@ -840,7 +840,7 @@ header nav ul li a:hover {
 }
 
 .archive-title a {
-    color: #2ca6cb;
+    color: #444;
     -webkit-transition: color 0.5s;
     -moz-transition: color 0.5s;
     -o-transition: color 0.5s;
@@ -849,7 +849,7 @@ header nav ul li a:hover {
 }
 
 .archive-title a:hover {
-    color: #2ca6cb;
+    color: #444;
     -webkit-transition: color 0.5s;
     -moz-transition: color 0.5s;
     -o-transition: color 0.5s;
