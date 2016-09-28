@@ -923,7 +923,7 @@ header nav ul li a:hover {
 
 @media only screen and (min-width: 768px) {
     article header.article-info {
-        border-bottom: 1px solid #dbdbdb
+        /*border-bottom: 1px solid #dbdbdb*/
     }
 }
 
@@ -1808,7 +1808,7 @@ section.comment {
 }
 
 #asidepart {
-    background: #fafafa;
+    background: #fff;
     margin: 1em 0 0;
     padding: .5em 2% 1em;
 }
@@ -1824,9 +1824,8 @@ section.comment {
 
 .asidetitle {
     font-size: 1.1em;
-    color: #2ca6cb;
+    color: #666;
     padding: 0 0 .3125em 0;
-    border-bottom: .1875em solid #ccc;
 }
 
 .asidetitle a {
@@ -1912,7 +1911,7 @@ section.comment {
 }
 
 .rsspart {
-    background: #2ca6cb;
+    background: #999;
     width: 100%;
 }
 
