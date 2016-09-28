@@ -591,7 +591,7 @@ header nav ul li a:hover {
         width: 82%
     }
 }
-
+/*
 #main {
     margin: 1em 0 0;
     line-height: 1.8;
@@ -787,7 +787,7 @@ header nav ul li a:hover {
 #page-nav .space {
     color: #2ca6cb
 }
-
+*/
 /* page layout */
 @media only screen and (min-width: 1024px) {
     .page {
@@ -796,6 +796,7 @@ header nav ul li a:hover {
 }
 
 /* archive layout */
+
 .category-icon:before, .tag-icon:before, .archive-icon:before {
     font-family: "FontAwesome";
     -webkit-font-smoothing: antialiased;
