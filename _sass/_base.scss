@@ -204,7 +204,12 @@ header {
         }
     }
 }
-
+article header{
+    background:#fff;
+}
+.post a, .page a, .link a, .photo a{
+    color:#444;
+}
 // Sections
 
 .section-heading {
