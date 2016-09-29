@@ -87,8 +87,8 @@ author:
   weibo: 5729765191     ## e.g. wuchong1014 or 2176287895 for http://weibo.com/2176287895
   weibo_verifier: 9d4bc461 ## e.g. b3593ceb Your weibo-show widget verifier ,if you use weibo-show it is needed.
   tsina: 9d4bc461     ## e.g. 2176287895  Your weibo ID,It will be used in share button.
-  douban: 121093272    ## e.g. wuchong1014 or your id for https://www.douban.com/people/wuchong1014
-  zhihu: sunxiaobiu     ## e.g. jark  for http://www.zhihu.com/people/jark
+  douban: 74961542    ## e.g. wuchong1014 or your id for https://www.douban.com/people/wuchong1014
+  zhihu: logoyoung     ## e.g. jark  for http://www.zhihu.com/people/jark
   email: 763815583     ## e.g. imjark@gmail.com
   twitter:    ## e.g. jarkwu for https://twitter.com/jarkwu
   github: logoyoungu    ## e.g. wuchong for https://github.com/wuchong
@@ -106,8 +106,8 @@ toc:
 ## if you don't want display contents in a specified post,you can modify `front-matter` and add `toc: false`.
 
 #### Links
-links:
-  tcOops's Blog: http://spacenx.pw/
+#links:
+#  tcOops's Blog: http://spacenx.pw/
 
 excerpt_separator: <!--more-->
 
@@ -129,7 +129,7 @@ google_analytics:
 ## You MUST upgrade to Universal Analytics first!
 ## https://developers.google.com/analytics/devguides/collection/upgrade/?hl=zh_CN
 baidu_tongji:
-  enable: true
+  enable: false
   sitecode: 7578feb1a00553f099171e7b2560ae78 ## e.g. e6d1f421bbc9962127a50488f9ed37d1 your baidu tongji site code
 cnzz_tongji:
   enable: false
@@ -142,7 +142,7 @@ totop: true           ## if you want to scroll to top in every post set the valu
 
 #### Custom Search
 google_cse:
-  enable: true
+  enable: false
   cx: 002270726174808560530:daiye9ndzfk  ## e.g. 018294693190868310296:abnhpuysycw your Custom Search ID.
 ## https://www.google.com/cse/
 ## To enable the custom search You must create a "search" folder in '/source' and a "index.md" file
@@ -153,7 +153,7 @@ google_cse:
 baidu_search:     ## http://zn.baidu.com/
   enable: false
   id: ## e.g. "783281470518440642"  for your baidu search id
-  site: ##http://zhannei.baidu.com/cse/search  ## your can change to your site instead of the default site
+  site: http://zhannei.baidu.com/cse/search  ## your can change to your site instead of the default site
 
 tinysou_search:     ## http://tinysou.com/
   enable: false
