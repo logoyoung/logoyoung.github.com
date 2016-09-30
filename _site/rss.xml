@@ -5,18 +5,18 @@
         <description>logoyoung的博客 - logoyoung</description>
         <link></link>
         <atom:link href="" rel="self" type="application/rss+xml" />
-        <lastBuildDate>Fri, 30 Sep 2016 16:00:33 +0800</lastBuildDate>
-        <pubDate>Fri, 30 Sep 2016 16:00:33 +0800</pubDate>
+        <lastBuildDate>Fri, 30 Sep 2016 16:03:10 +0800</lastBuildDate>
+        <pubDate>Fri, 30 Sep 2016 16:03:10 +0800</pubDate>
         <ttl>60</ttl>
 
 
         <item>
                 <title>开始写博客</title>
                 <description>&lt;!--more--&gt;
-&lt;p&gt;##开始写博客
-———–
-&lt;code&gt;2016-09-30&lt;/code&gt;
-———–&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;code&gt;2016-09-30&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;写博客这事儿在去年的时候就打算了，但是总是被一些零零碎碎的事情给耽搁了。总是想抽一块时间好好的总结一下自己的工作、生活以及学习上的感悟。后来发现专门拿一块时间做一件事还是挺困难，再者说写博客无非是记录自己学习、工作上的感悟，而非作为一件任务来完成，所以觉得不管多忙应该把它作为一个习惯，平时利用些琐碎时间去完成就好。加油！坚持！&lt;/p&gt;
