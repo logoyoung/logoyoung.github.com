@@ -4,7 +4,7 @@
  <title>logoyoung的博客</title>
  <link href="" rel="self"/>
  <link href=""/>
- <updated>2016-09-30T15:46:24+08:00</updated>
+ <updated>2016-09-30T15:57:06+08:00</updated>
  <id></id>
  <author>
    <name>logoyoung</name>
@@ -13,16 +13,12 @@
 
  
  <entry>
-   <title>First Blog</title>
-   <link href="/2016/09/30/first-blog"/>
+   <title>开始写博客</title>
+   <link href="/%E7%94%9F%E6%B4%BB/2016/09/30/first-blog"/>
    <updated>2016-09-30T00:00:00+08:00</updated>
-   <id>/2016/09/30/first-blog</id>
-   <content type="html">&lt;p&gt;layout: post
-title:  “开始写博客”
-date:   2016-09-30
-categories: 生活
-————————————
-#开始写博客
+   <id>/%E7%94%9F%E6%B4%BB/2016/09/30/first-blog</id>
+   <content type="html">&lt;!--more--&gt;
+&lt;p&gt;#开始写博客
 &lt;code&gt;2016-09-30&lt;/code&gt;
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝&lt;/p&gt;
 &lt;blockquote&gt;

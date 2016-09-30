@@ -13,4 +13,4 @@
 /rss.xml
 /sitemap.txt
 
-/2016/09/30/first-blog
+/%E7%94%9F%E6%B4%BB/2016/09/30/first-blog

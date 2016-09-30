@@ -1,12 +1,13 @@
 ---
 published: true
 layout: post
-title:  "开始写博客"
+title: 开始写博客
 category: 生活
 tags:
   - 生活
 time: 2016.09.30
-excerpt:今天开始坚持写博客
+excerpt: 今天开始坚持写博客.
+
 ---
 
 <!--more-->
