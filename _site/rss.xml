@@ -5,10 +5,41 @@
         <description>logoyoung的博客 - logoyoung</description>
         <link></link>
         <atom:link href="" rel="self" type="application/rss+xml" />
-        <lastBuildDate>Fri, 30 Sep 2016 16:03:10 +0800</lastBuildDate>
-        <pubDate>Fri, 30 Sep 2016 16:03:10 +0800</pubDate>
+        <lastBuildDate>Mon, 10 Oct 2016 10:31:58 +0800</lastBuildDate>
+        <pubDate>Mon, 10 Oct 2016 10:31:58 +0800</pubDate>
         <ttl>60</ttl>
 
+
+        <item>
+                <title>阅读系统</title>
+                <description>&lt;!--more--&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;code&gt;2016-10-10&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;hr /&gt;
+
+&lt;blockquote&gt;
+  &lt;ul&gt;
+    &lt;li&gt;理解&lt;/li&gt;
+    &lt;li&gt;低沉的时候就看书&lt;/li&gt;
+    &lt;li&gt;保证精力充沛、有充足的睡眠&lt;/li&gt;
+    &lt;li&gt;迷茫、想不开、认真的不停的思考&lt;/li&gt;
+    &lt;li&gt;学习是生活的一部分,学习的态度&lt;/li&gt;
+    &lt;li&gt;看、读、思考、实践&lt;/li&gt;
+    &lt;li&gt;看一遍记不住就看很多遍&lt;/li&gt;
+    &lt;li&gt;看书和学习是两回事&lt;/li&gt;
+    &lt;li&gt;遇到好的书会抄一边&lt;/li&gt;
+    &lt;li&gt;进步有不同的模式 线性的、螺旋式的&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/blockquote&gt;
+
+</description>
+                <link>/%E9%98%85%E8%AF%BB/2016/10/10/read-system</link>
+                <guid>/%E9%98%85%E8%AF%BB/2016/10/10/read-system</guid>
+                <pubDate>Mon, 10 Oct 2016 00:00:00 +0800</pubDate>
+        </item>
 
         <item>
                 <title>开始写博客</title>
