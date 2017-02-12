@@ -25,6 +25,9 @@ categories: life
 语法的预览。因此通过IDE可以边写边预览，也不用麻烦下载其他的预览软件了
 ，同时在写完代码后不用换软件直接切换到博客环境写总结是不是很爽？
 
+### git
+　　上传代码工具
+
 
 ### jekyll
 > jekyll是一个简单的免费的Blog生成工具，类似WordPress。但是和WordPress又有很大的不同，
@@ -52,10 +55,9 @@ categories: life
 * 替换rubyGem库地址
 　　在国内使用默认的gem源会有问题，需要重新配置gem源。
     
-        gem sources --remove https://rubygems.org/
-        gem sources -a https://gems.ruby-china.org/
-        gem sources -l
-    
+      gem sources --remove https://rubygems.org/
+      gem sources -a https://gems.ruby-china.org/
+      gem sources -l
     
 　　如果遇到 SSL 证书问题，你又无法解决，
 请直接用 http://gems.ruby-china.org 避免 SSL 的问题。
@@ -77,6 +79,36 @@ gem install jekyll
 　　注册github账号，创建page仓库这里github网站有介绍，就不进行介绍了。
 创建好仓库可以上传自己的代码，同时也可以找jekyll模板。[下载模板](http://jekyllthemes.org/)。
     
+
+
+### 编写博客
+
+　　我是直接下载的jekyll模板使用，也可以使用jekyll自行创建一个博客项目。
+在_post文件下创建mkrkdown文件。  
+　　命名为日期加标题如：2017-02-13-jekyll+github page搭建博客系统.md。
+编辑如下：
+
+    ---
+    layout: post
+    comments: true
+    categories: life
+    ---
+    
+    ### 介绍 
+    　　相信有很多同学都有写博客记录工作、学习、心情的习惯，
+    搭建博客网站的途径很多，今天介绍一种利用github page和jekyll
+    
+　　编写好文件进行编译
+
+    jekyll build
+    
+　　使用git工具上传到仓库
+    
+    git add .
+    git commit -m "jekyll blog"
+    git push
+    
+期间需要输入github账号和密码，输入账号密码就可以上传代码了哦。去github page网页上看看撰写效果吧。
 
     
 
