@@ -1,9 +1,9 @@
 ---
 layout: post
 comments: true
-categories: life
+categories: diary
 ---
 
 ## Empty diary template
 
-Empty post template
+的鬼地方个健康老人
