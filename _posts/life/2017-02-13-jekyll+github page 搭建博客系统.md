@@ -47,12 +47,15 @@ categories: life
 
     ruby dk.rb init
     ruby dk.rb install
+    
 
 * 替换rubyGem库地址
 　　在国内使用默认的gem源会有问题，需要重新配置gem源。
-    gem sources --remove https://rubygems.org/
-    gem sources -a https://gems.ruby-china.org/
-    gem sources -l
+    
+    ```
+        gem sources --remove https://rubygems.org/
+        gem sources -a https://gems.ruby-china.org/
+        gem sources -l
     
 　　如果遇到 SSL 证书问题，你又无法解决，
 请直接用 http://gems.ruby-china.org 避免 SSL 的问题。
