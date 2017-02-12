@@ -42,6 +42,7 @@ categories: life
 　
 
 * [安装对应的RubyDevKit](http://rubyinstaller.org/downloads/)
+
 > DevKit是windows平台下编译和使用本地C/C++扩展包的工具。
 它就是用来模拟Linux平台下的make,gcc,sh来进行编译。
 但是这个方法目前仅支持通过RubyInstaller安装的Ruby
