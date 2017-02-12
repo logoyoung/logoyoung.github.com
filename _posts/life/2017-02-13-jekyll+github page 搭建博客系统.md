@@ -108,7 +108,7 @@ gem install jekyll
     git commit -m "jekyll blog"
     git push
     
-期间需要输入github账号和密码，输入账号密码就可以上传代码了哦。去github page网页上看看撰写效果吧。
+　　期间需要输入github账号和密码，输入账号密码就可以上传代码了哦。如果觉得每次输入账号密码[改成ssh方式](http://blog.csdn.net/yuquan0821/article/details/8210944)提交就可以了。去github page网页上看看撰写效果吧。
 
     
 

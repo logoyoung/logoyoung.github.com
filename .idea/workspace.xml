@@ -76,8 +76,8 @@
         <entry file="file://$PROJECT_DIR$/_posts/life/2017-02-13-jekyll+github page 搭建博客系统.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="695">
-                <caret line="110" column="57" selection-start-line="110" selection-start-column="57" selection-end-line="110" selection-end-column="57" />
+              <first_editor relative-caret-position="440">
+                <caret line="110" column="113" selection-start-line="110" selection-start-column="113" selection-end-line="110" selection-end-column="113" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -361,12 +361,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1486887093529</updated>
-      <workItem from="1486887096859" duration="10168000" />
+      <workItem from="1486887096859" duration="11001000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10168000" />
+    <option name="totallyTimeSpent" value="11001000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-91" y="35" width="1940" height="1056" extended-state="0" />
@@ -459,8 +459,8 @@
     <entry file="file://$PROJECT_DIR$/_posts/life/2017-02-13-jekyll+github page 搭建博客系统.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="695">
-            <caret line="110" column="57" selection-start-line="110" selection-start-column="57" selection-end-line="110" selection-end-column="57" />
+          <first_editor relative-caret-position="440">
+            <caret line="110" column="113" selection-start-line="110" selection-start-column="113" selection-end-line="110" selection-end-column="113" />
             <folding />
           </first_editor>
           <second_editor />
