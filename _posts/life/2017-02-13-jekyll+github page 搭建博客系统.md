@@ -4,7 +4,7 @@ comments: true
 categories: life
 ---
 
-###介绍
+### 介绍 
 相信有很多同学都有写博客记录工作、学习、心情的习惯，
 搭建博客网站的途径很多，今天介绍一种利用github page和jekyll
 搭建静态博客的方法。当然，这种方式最大的优点就是免费啦。之前写过一个
@@ -12,7 +12,8 @@ categories: life
 优点是灵活、动态交互。缺点当然是花钱啦。当然，去一些平台写博客
 也是不错的，如新浪的SAE，大家可以去试试。
 
-###工具
+### 工具
+
 * phpStom
 * git
 * jekyll
@@ -25,13 +26,13 @@ categories: life
 ，同时在写完代码后不用换软件直接切换到博客环境写总结是不是很爽？
 
 
-###jekyll
+### jekyll
 > jekyll是一个简单的免费的Blog生成工具，类似WordPress。但是和WordPress又有很大的不同，
 原因是jekyll只是一个生成静态网页的工具，不需要数据库支持。但是可以配合第三方服务,
 例如Disqus。最关键的是jekyll可以免费部署在Github上，而且可以绑定自己的域名。
 
 
-####搭建环境
+#### 搭建环境
 * [安装ruby](http://rubyinstaller.org/downloads/)
 我的系统是Window，使用RubyInstaller来进行安装。
 下载安装完需要将命令添加到系统环境变量里。在命令框中输入ruby -v 检测是否安装成功。
@@ -70,7 +71,7 @@ gem install jekyll
 ```
 
 
-###github page
+### github page
 注册github账号，创建page仓库这里github网站有介绍，就不进行介绍了。
 创建好仓库可以上传自己的代码，同时也可以找jekyll模板。[下载模板](http://jekyllthemes.org/)。
     
