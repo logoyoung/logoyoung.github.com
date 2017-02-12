@@ -27,7 +27,7 @@ categories: life
 
 
 ### jekyll
-> 　　jekyll是一个简单的免费的Blog生成工具，类似WordPress。但是和WordPress又有很大的不同，
+> jekyll是一个简单的免费的Blog生成工具，类似WordPress。但是和WordPress又有很大的不同，
 原因是jekyll只是一个生成静态网页的工具，不需要数据库支持。但是可以配合第三方服务,
 例如Disqus。最关键的是jekyll可以免费部署在Github上，而且可以绑定自己的域名。
 
@@ -39,7 +39,7 @@ categories: life
 　
 
 * [安装对应的RubyDevKit](http://rubyinstaller.org/downloads/)
-> 　　 DevKit是windows平台下编译和使用本地C/C++扩展包的工具。
+>　DevKit是windows平台下编译和使用本地C/C++扩展包的工具。
 它就是用来模拟Linux平台下的make,gcc,sh来进行编译。
 但是这个方法目前仅支持通过RubyInstaller安装的Ruby
 
@@ -51,9 +51,9 @@ categories: life
 * 替换rubyGem库地址
 　　在国内使用默认的gem源会有问题，需要重新配置gem源。
 ```
-gem sources --remove https://rubygems.org/
-gem sources -a https://gems.ruby-china.org/
-gem sources -l
+    gem sources --remove https://rubygems.org/
+    gem sources -a https://gems.ruby-china.org/
+    gem sources -l
 ```
 　　如果遇到 SSL 证书问题，你又无法解决，
 请直接用 http://gems.ruby-china.org 避免 SSL 的问题。
