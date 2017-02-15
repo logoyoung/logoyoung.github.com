@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2a07e551-f449-461d-92c3-4e2098236ace" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/work/2017-02-15-requireJS前端部署.md" afterPath="$PROJECT_DIR$/_posts/work/2017-02-15-requireJS前端部署.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/work/2017-02-16-前端部署工具 gulp.md" afterPath="$PROJECT_DIR$/_posts/work/2017-02-16-前端部署工具 gulp.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_posts/work/2017-02-17-js实现自定义事件.md" />
     </list>
     <ignored path="logoyoung.github.com.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -37,12 +36,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="2017-02-15-requireJS前端部署.md" pinned="false" current-in-tab="true">
+      <file leaf-file-name="2017-02-15-requireJS前端部署.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_posts/work/2017-02-15-requireJS前端部署.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
+              <first_editor relative-caret-position="0">
+                <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="4" selection-end-column="3" />
+                <folding />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="2017-02-17-js实现自定义事件.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/_posts/work/2017-02-17-js实现自定义事件.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
               <first_editor relative-caret-position="286">
-                <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+                <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -98,16 +110,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="frontpage.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_layouts/frontpage.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="newpost.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_includes/newpost.html">
           <provider selected="true" editor-type-id="text-editor">
@@ -154,6 +156,7 @@
         <option value="$PROJECT_DIR$/_posts/life/2017-02-13-jekyll+github page 搭建博客系统.md" />
         <option value="$PROJECT_DIR$/_posts/work/2017-02-15-requireJS前端部署.md" />
         <option value="$PROJECT_DIR$/_posts/work/2017-02-16-前端部署工具 gulp.md" />
+        <option value="$PROJECT_DIR$/_posts/work/2017-02-17-js实现自定义事件.md" />
       </list>
     </option>
   </component>
@@ -334,12 +337,12 @@
       <option name="presentableId" value="Default" />
       <updated>1486887093529</updated>
       <workItem from="1486887096859" duration="14151000" />
-      <workItem from="1487169336752" duration="1612000" />
+      <workItem from="1487169336752" duration="1914000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15763000" />
+    <option name="totallyTimeSpent" value="16065000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="28" y="50" width="1683" height="1061" extended-state="0" />
@@ -611,8 +614,19 @@
     <entry file="file://$PROJECT_DIR$/_posts/work/2017-02-15-requireJS前端部署.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="4" selection-end-column="3" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/work/2017-02-17-js实现自定义事件.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
           <first_editor relative-caret-position="286">
-            <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+            <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
             <folding />
           </first_editor>
           <second_editor />
