@@ -1,7 +1,7 @@
 ---
 layout: post
 comments: true
-categories: life
+categories: 生活
 ---
 
 ### 介绍 
